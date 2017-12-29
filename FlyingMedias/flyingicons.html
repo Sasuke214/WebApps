@@ -120,7 +120,7 @@ console.log(ft.style.top);
 function fly()
 {
 	var val=parseInt(ft.style.top);
-	val=initpos+document.body.scrollTop;
+	val=initpos+document.documentElement.scrollTop;
 	console.log(val);
 	ft.style.top=val+'px';
 }
